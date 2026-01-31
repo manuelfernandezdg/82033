@@ -1,0 +1,12 @@
+body {
+  background-color: black; /* Color de fondo */
+  color: white; /* Color de la tipografía */
+}
+
+header {
+  background-color: red;
+}
+
+main {
+  background-color: gray;
+}
