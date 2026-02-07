@@ -1,0 +1,90 @@
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Variables */
+html {
+  --bg-color-200:hsl(214, 25%, 11%);
+  --bg-color-400:hsl(212, 19%, 16%);
+  --bg-color-400-75:hsl(212, 19%, 16%, 75%);
+  --bg-color-500:hsl(212, 19%, 25%);
+
+  --text-color:hsl(215, 25%, 85%);
+  --accent-color-200:hsl(22, 44%, 12%);
+  --accent-color-400:hsl(22, 100%, 65%);
+  --accent-color-500:hsl(22, 100%, 85%);
+}
+
+/* Estilos generales */
+body {
+  background-color: var(--bg-color-200); /* Color del fondo */
+  color: var(--text-color); /* Color de la tipografía */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.6; /* Alto del renglón */
+}
+
+/* Estilos para el header */
+header {
+  background-color: var(--bg-color-400);
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+
+/* Estilos para el main */
+main h1 {
+  font-weight: 300; /* El grosor de línea */
+  /* font-style: italic;  Inclinación */
+  text-align: center; /* Alinear el texto */
+  font-size: 2.5rem; /* Tamaño del cuerpo de la tipografía */
+}
+
+/* Estilos para las secciones */
+
+
+/* Estilos para el footer */
+footer {
+  background-color: var(--bg-color-400);
+  padding: 2rem;
+}
+
+footer h1 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+/* Ejemplo de clase 2 */
+/* Selector de clase */
+.modelo-de-caja {
+  background-color: var(--bg-color-400);
+  width: 250px; /* Ancho */
+  height: 250px; /* Alto */
+  padding: 16px; /* Margen interno */ 
+  border: 8px solid var(--accent-color-400); /* Grosor Estilo Color */
+  border-radius: 32px; /* Radio de las esquinas del contenedor */
+
+  box-sizing: border-box; /* Ajuste del modelo de caja */
+
+  margin-top: 8px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+
+  margin: 64px auto 16px; /* arriba y abajo / izquierda y derecha */
+
+}
+
+img {
+  width: 100%;
+  padding: 2rem;
+  border: 0.5rem solid var(--accent-color-400);
+  border-radius: 2rem;
+  box-sizing: border-box; /* Clave para el tamaño final de los elementos */
+}
