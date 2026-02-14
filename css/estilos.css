@@ -1,7 +1,6 @@
 /* Tipografía */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 /* Variables */
 html {
   --bg-color-200:hsl(214, 25%, 11%);
@@ -15,6 +14,11 @@ html {
   --accent-color-500:hsl(22, 100%, 85%);
 }
 
+/* Selector universal */
+* {
+  box-sizing: border-box; /* Clave para el tamaño final de los elementos */
+}
+
 /* Estilos generales */
 body {
   background-color: var(--bg-color-200); /* Color del fondo */
@@ -22,20 +26,8 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   line-height: 1.6; /* Alto del renglón */
-}
-
-/* Estilos para el header */
-header {
-  background-color: var(--bg-color-400);
-  text-align: center;
-  padding: 2rem;
-}
-
-header h1 {
   margin: 0;
-  font-size: 2rem;
 }
-
 
 /* Estilos para el main */
 main h1 {
@@ -45,7 +37,64 @@ main h1 {
   font-size: 2.5rem; /* Tamaño del cuerpo de la tipografía */
 }
 
+/* Estilos para el header */
+header {
+  background-color: var(--bg-color-400);
+  padding: 1rem 0;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Estilos para la navegación */
+header ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Links para el header */
+header h1 a:link,
+header h1 a:visited {
+  color: var(--accent-color-400);
+  text-decoration: none;
+}
+
+header h1 a:hover,
+header h1 a:active {
+  color: var(--accent-color-500);
+}
+
+
 /* Estilos para las secciones */
+section {
+  width: min(62rem, 100%);
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/* Sección de bienvenida */
+#bienvenida {
+  background-image: url('../img/bienvenida.jpg');
+  background-size: cover;
+  padding: 0;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+}
+
+#bienvenida h1 {
+  background-color: var(--bg-color-400-75);
+  padding: 1rem 0;
+}
 
 
 /* Estilos para el footer */
@@ -79,13 +128,60 @@ footer h1 {
   margin-left: auto;
 
   margin: 64px auto 16px; /* arriba y abajo / izquierda y derecha */
-
 }
 
-img {
+/* Clase 3 */
+/* img {
   width: 100%;
   padding: 2rem;
   border: 0.5rem solid var(--accent-color-400);
   border-radius: 2rem;
-  box-sizing: border-box; /* Clave para el tamaño final de los elementos */
+} */
+
+/* Flexbox */
+.contenedor-flex {
+  border: 0.15rem solid var(--accent-color-500);
+  height: 32rem;
+  padding: 1rem;
+  display: flex; /* Activa Flexbox en el contenedor */
+  flex-direction: row; /* Dirección de Flex*/
+  justify-content: center; /* Controla el eje principal */
+  align-items: center; /* Controla el eje secundario */
+  gap: 1rem; /* Distancia entre elementos */
 }
+
+.item {
+  border: 0.15rem solid var(--accent-color-400);
+  padding: 1rem;
+  text-align: center;
+  width: 7rem;
+}
+
+/* Vínculos para todo el sitio*/
+
+/* Reposo */
+/* :link */
+a:link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Visitado */
+/* :visited */
+a:visited {
+  color: var(--text-color);
+}
+
+/* Hover */
+/* :hover */
+a:hover {
+  color: var(--accent-color-400);
+}
+
+/* Active */
+/* :active */
+a:active {
+  color: var(--accent-color-400);
+}
+
+/* On focus */
