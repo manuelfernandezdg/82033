@@ -97,19 +97,6 @@ section {
 }
 
 
-/* Estilos para el footer */
-footer {
-  background-color: var(--bg-color-400);
-  padding: 2rem;
-}
-
-footer h1 {
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-
 /* Ejemplo de clase 2 */
 /* Selector de clase */
 .modelo-de-caja {
@@ -130,13 +117,7 @@ footer h1 {
   margin: 64px auto 16px; /* arriba y abajo / izquierda y derecha */
 }
 
-/* Clase 3 */
-/* img {
-  width: 100%;
-  padding: 2rem;
-  border: 0.5rem solid var(--accent-color-400);
-  border-radius: 2rem;
-} */
+
 
 /* Flexbox */
 .contenedor-flex {
@@ -158,36 +139,134 @@ footer h1 {
 }
 
 /* Vínculos para todo el sitio*/
-
 /* Reposo */
 /* :link */
 a:link {
-  color: var(--text-color);
+  color: var(--accent-color-400);
   text-decoration: none;
 }
 
 /* Visitado */
 /* :visited */
 a:visited {
-  color: var(--text-color);
+  color: var(--accent-color-400);
 }
 
 /* Hover */
 /* :hover */
 a:hover {
-  color: var(--accent-color-400);
+  color: var(--accent-color-500);
 }
 
 /* Active */
 /* :active */
 a:active {
-  color: var(--accent-color-400);
+  color: var(--accent-color-500);
 }
 
 /* On focus */
 
 /* Resolución del ejercicio de Novedades */
 
+/* Como vimos en clase 2 */
+img {
+  width: 100%;
+}
+
+.contenedor-novedades {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contenedor-novedades article {
+  width: 14rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.contenedor-novedades h2,
+.contenedor-novedades h3 {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contenedor-novedades h3 {
+  font-weight: 400;
+}
+
+.contenedor-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Estilos para los links de Novedades */
+a.btn-outline:link, 
+a.btn-outline:visited {
+  font-size: 0.8rem;
+  text-align: center;
+  border: 0.2rem solid var(--bg-color-400);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+a.btn-outline:hover, 
+a.btn-outline:active {
+  background-color: var(--bg-color-400);
+}
+
+a.btn-fill:link, 
+a.btn-fill:visited {
+  font-size: 0.8rem;
+  text-align: center;
+  border: 0.2rem solid var(--bg-color-500);
+  background-color: var(--bg-color-500);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+a.btn-fill:hover, 
+a.btn-fill:active {
+  background-color: var(--bg-color-400);
+}
 
 
 /* Clase 4 */
+
+/* Footer */
+/* Estilos para el footer */
+footer {
+  background-color: var(--bg-color-400);
+  padding: 2rem;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  width: min(62rem, 100%);
+  margin: 0 auto;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer h1 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
