@@ -58,18 +58,17 @@ header ul {
   gap: 1rem;
 }
 
-/* Links para el header */
-header h1 a:link,
-header h1 a:visited {
-  color: var(--accent-color-400);
+/* Links para los links del header */
+header nav a:link,
+header nav a:visited {
+  color: var(--text-color);
   text-decoration: none;
 }
 
-header h1 a:hover,
-header h1 a:active {
-  color: var(--accent-color-500);
+header nav a:hover,
+header nav a:active {
+  color: var(--accent-color-400);
 }
-
 
 /* Estilos para las secciones */
 section {
