@@ -3,7 +3,7 @@
 **Curso de Introducción al desarrollo web con HTML y CSS en Educación IT. 82033, Febrero**
 
 ## Recursos externos / Dependencias
-- [W3C HTML Manual](https://html.spec.whatwg.org/){:target="_blank" rel="noopener"} – Especificación oficial de HTML
+- [W3C HTML Manual](https://html.spec.whatwg.org/{:target="_blank" rel="noopener"}) – Especificación oficial de HTML
 - [W3C CSS Manual](https://html.spec.whatwg.org/){:target="_blank" rel="noopener"} – Especificación oficial de HTML
 - [W3C HTML Living Standard](https://html.spec.whatwg.org/){:target="_blank" rel="noopener"} – Especificación oficial de HTML
 - [MDN Web Docs – HTML](https://developer.mozilla.org/es/docs/Web/HTML){:target="_blank" rel="noopener"} – Documentación práctica recomendada
