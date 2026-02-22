@@ -6,7 +6,7 @@
 - [W3C HTML Manual](https://www.w3schools.com/html/) – Manual oficial de **HTML**
 - [W3C CSS Manual](https://www.w3schools.com/css/) – Manual oficial de **CSS**
 
-- [Meta tagsl](https://www.w3schools.com/TAGs/att_meta_name.asp ) – Meta tags para el **<head>** del documento
+- [Meta tagsl](https://www.w3schools.com/TAGs/att_meta_name.asp ) – Meta tags para el **head** del documento
 
 - [W3C HTML Living Standard](https://html.spec.whatwg.org/) – Especificación oficial de HTML
 - [MDN Web Docs – HTML](https://developer.mozilla.org/es/docs/Web/HTML) – Documentación práctica recomendada
