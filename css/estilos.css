@@ -164,6 +164,11 @@ a:active {
 }
 
 /* On focus */
+a:focus {
+  outline: 0.3rem solid var(--accent-color-400);
+  outline-offset: 0.5rem;
+  border-radius: 0.5rem;
+}
 
 
 /* Resolución del ejercicio de Novedades */
@@ -235,6 +240,13 @@ a.btn-fill:active {
   background-color: var(--bg-color-400);
 }
 
+a.btn-fill:focus,
+a.btn-outline:focus {
+  outline: 0.3rem solid var(--accent-color-400);
+  outline-offset: 0;
+  border-radius: 0.5rem;
+}
+
 
 /* Clase 4 */
 
@@ -270,3 +282,81 @@ footer ul {
   display: flex;
   gap: 1rem;
 }
+
+/* Clase 5 */
+/* Todos los formularios */
+form {
+  width: min(24rem, 100%);
+  margin: 0 auto 2rem;
+  border: 0.15rem solid var(--accent-color-400);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+form h2 {
+  margin: 0;
+}
+
+/* Formato de tipografía para los formularios */
+form input,
+form select,
+form textarea,
+form button {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+}
+
+/* Campos de formulario */
+form input,
+form select,
+form textarea,
+form button {
+  padding: 0.5rem 1rem;
+  border: 0.3rem solid var(--bg-color-500);
+  border-radius: 0.5rem;
+}
+
+form textarea {
+  min-height: 12rem;
+}
+
+/* Estado on focus en los elementos */
+form input:focus,
+form select:focus,
+form textarea:focus,
+button:focus {
+  outline: none;
+  border: 0.3rem solid var(--accent-color-400);
+}
+
+/* Mensajes de estado */
+form span {
+  color: var(--accent-color-400);
+  text-align: right;
+}
+
+/* Estilos para los botones de los formularios */
+form button {
+  background-color: var(--bg-color-500);
+  font-weight: 600;
+  color: var(--text-color);
+  /* align-self: center;
+  aspect-ratio: 1;
+  border-radius: 100%; */
+}
+
+form button:hover {
+  background-color: var(--accent-color-400);
+  border: 0.3rem solid var(--accent-color-400);
+  color: var(--bg-color-200);
+  cursor: pointer;
+}
+
+/* Arreglar el foco para los campos checkbox */

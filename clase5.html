@@ -49,11 +49,60 @@
         <span>Mensaje de estado</span>
 
         <label for="password">Contraseña</label>
-        <input type="password" placeholder="Elegí tu contraseña" id="password" name="passowrd" required>
+        <input type="password" placeholder="Elegí tu contraseña" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)" required>
         <span>Mensaje de estado</span>
+
+        <label>¿Querés recibir novedades en tu email?
+          <input type="radio" name="newsletter" value="si" checked> Si
+          <input type="radio" name="newsletter" value="no"> No
+        </label>
 
         <button>Registrarme</button>
       </form>
+
+      <form action="">
+        <h2>Ingreso</h2>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Recuerda el email con el que te registraste" title="Recuerda el email con el que te registraste" required>
+        <span>Mensaje de estado</span>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+        <span>Mensaje de estado</span>
+
+        <button>Ingresar</button>
+      </form>
+
+      <form action="">
+        <h2>Envianos tu mensaje</h2>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamás?" required>
+        <span>Mensaje de estado</span>
+
+        <label for="asunto">Asunto</label>
+        <select name="asunto" id="asunto">
+          <option value="suscripcion" selected>Mi suscripción</option>
+          <option value="pedido">Mi pedido</option>
+          <option value="novedades">Mis novedades</option>
+          <option value="otro">Otra consulta</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" required></textarea>
+        <span>Mensaje de estado</span>
+
+        <div class="contenedor-form">
+          <br>
+          ¿Cuáles son tus favoritos? <br>
+          <input type="checkbox" id="intereses1" name="intereses1" value="Manga"><label for="intereses1"> Manga</label> <br>
+          <input type="checkbox" id="intereses2" name="intereses2" value="Comics"><label for="intereses2"> Comics</label> <br>
+          <input type="checkbox" id="intereses3" name="intereses3" value="CienciaFiccion"><label for="intereses3"> Ciencia Ficción</label> <br>
+          <input type="checkbox" id="intereses4" name="intereses4" value="Fantasia"> <label for="intereses4"> Fantasía</label>
+        </div>
+
+        <button>Enviar mensaje</button>
+      </form>
+      
     </section>
   </main>
   <footer>
