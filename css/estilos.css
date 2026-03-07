@@ -1,5 +1,5 @@
 /* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Variables */
 html {
@@ -29,7 +29,7 @@ body {
   margin: 0;
 }
 
-/* Quita el outline cuando hacemos click con el mouse */
+/* Quita el outline cuando hacemos click con el mouse, referencia: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible*/
 a:focus:not(:focus-visible),
 button:focus:not(:focus-visible),
 input:focus:not(:focus-visible),
@@ -369,3 +369,154 @@ form button:hover {
 }
 
 /* Clase 6 */
+/* Último ejercicio (y también el footer!) */
+#producto * {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#producto {
+  padding: 12rem 3rem;
+}
+
+#producto img {
+  width: 196px;
+}
+
+.contenedor-producto {
+  display: flex;
+  /* En celulares */
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.producto-izq {
+  display: flex;
+  /* En celulares */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.producto-der {
+  display: flex;
+  flex-direction: column;
+  /* En celulares */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contenedor-pills {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.producto-der h1 {
+  /* En celulares */
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.producto-der p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.producto-der h2 {
+  font-size: 2rem;
+}
+
+/* Estilos para los links, botón comprar y pills */
+a.btn-prod-fill:link,
+a.btn-prod-fill:visited {
+  color: var(--bg-color-200);
+  font-weight: 600;
+  background-color: var(--accent-color-400);
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+}
+
+a.btn-prod-fill:hover,
+a.btn-prod-fill:active {
+  background-color: var(--accent-color-500);
+}
+
+a.pills:link,
+a.pills:visited {
+  color: var(--bg-color-200);
+  font-weight: 600;
+  font-size: 0.8rem;
+  background-color: var(--accent-color-400);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+a.pills:hover,
+a.pills:active {
+  background-color: var(--accent-color-500);
+}
+
+/* Sección de contacto */
+#contacto * {
+  font-family: "Montserrat", sans-serif;
+}
+
+#contacto video {
+  width: 32rem;
+}
+
+.contenedor-contacto {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.contacto-der * {
+  margin: 0;
+}
+
+.contacto-der {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contacto-der h1 {
+  text-align: left;
+}
+
+.contacto-der ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contacto iframe {
+  width: 100%;
+  height: 32rem;
+  border: none;
+}
+
+/* Footer */
+/* Modifica el tamaño de las imágenes que están en el pie de página */
+footer nav img {
+  width: 2rem;
+  aspect-ratio: 1;
+}
+
+
+/* Modificación de la maqueta para pantallas mayores a un ancho de 768px */
+@media all and (min-width: 768px) {
+
+  .contenedor-producto {
+    flex-direction: row;
+  }
+
+  .producto-der {
+    align-items: flex-start;
+  }
+
+  .producto-der h1 {
+    text-align: left;
+  }
+
+}
