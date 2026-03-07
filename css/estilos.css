@@ -29,6 +29,15 @@ body {
   margin: 0;
 }
 
+/* Quita el outline cuando hacemos click con el mouse */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* Estilos para el main */
 main h1 {
   font-weight: 300; /* El grosor de línea */
@@ -332,8 +341,8 @@ form input:focus,
 form select:focus,
 form textarea:focus,
 button:focus {
-  outline: none;
-  border: 0.3rem solid var(--accent-color-400);
+  outline: 0.3rem solid var(--accent-color-400);
+  outline-offset: 0.5rem;
 }
 
 /* Mensajes de estado */
@@ -359,4 +368,4 @@ form button:hover {
   cursor: pointer;
 }
 
-/* Arreglar el foco para los campos checkbox */
+/* Clase 6 */
